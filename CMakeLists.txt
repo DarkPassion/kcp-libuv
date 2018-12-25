@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.8)
 
-project(new-kcp)
+project(kcp-libuv)
 
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 
@@ -67,7 +67,7 @@ endif()
 file(GLOB C_SRC src/*.c)
 file(GLOB CPP_SRC src/*.cpp src/*.cc)
 
-add_executable(new-kcp ${C_SRC} ${CPP_SRC} ${uv_sources})
+add_executable(kcp-libuv ${C_SRC} ${CPP_SRC} ${uv_sources})
 
 
 #target_link_libraries(lua-uv uv_a)
